@@ -9,9 +9,13 @@ html {
 body {
   margin: 0;
   background-color: #49efcd;
+  background-image: linear-gradient('red', 'green');
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   perspective: 800px;
   overflow: hidden;
+  font-family: 'Bonheur Royale', cursive;
 }
 
 .envelope {
@@ -81,10 +85,11 @@ body {
   margin: 0;
 }
 .envelope .back .letter p {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 24px;
   letter-spacing: 3px;
-  color: #088dff;
+  color: #ffffff;
+  padding: 140px 40px;
 }
 .envelope .front .mail p:first-child {
   font-size: 50px;
@@ -106,6 +111,7 @@ body {
 }
 .envelope .back {
   transform: rotateY(180deg) translate3d(0, 0, 1px);
+  background-image: url('../../assets/card_bg.jpg') no-repate;
 }
 .envelope .back .flip {
   position: absolute;
